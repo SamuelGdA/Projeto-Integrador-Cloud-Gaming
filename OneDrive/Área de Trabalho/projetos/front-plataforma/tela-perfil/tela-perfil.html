@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Screen</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="tela-perfil.css">
+</head>
+<body>
+    <header>
+
+        <div class="logo-e-nome">
+            <i class="bi bi-xbox"></i>
+            <span>PASSE PIRATA</span>
+        </div>
+
+        <a class="logx" href="Log out">Log out</a>
+
+    </header>
+
+    <article class="conteudo" style="display: flex;">
+
+        <section class="card-perfil">
+
+            <div class="fundo-perfil">
+            </div>
+
+            <div class="foto-perfil">
+                <img src="https://th.bing.com/th/id/OIP.AvFCDidOSeResW3k31eCdQHaHa?rs=1&pid=ImgDetMain" alt="">
+                <div class="editar-foto">
+                    <i class="bi bi-pencil-square"></i>
+                </div>
+            </div>
+
+            <div class="info-perfil">
+                <div class="nome-username">
+                    <span class="nome-usuario">Laliras</span>
+                    <span class="username-usuario">@laliras01</span>
+                </div>
+                
+                <span class="plano">Capitão</span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="nav-jogos-fav li-selecionada">Jogos favoritos (10)</li>
+                    <li class="nav-amigos">Amigos (3)</li>
+                    <li class="nav-avaliacoes">Avaliações (7)</li>
+                    <li class="nav-meus-dados">Meus dados</li>
+                </ul>
+            </nav>
+
+            <section class="jogos-favoritos" style="display: flex;">
+                <img src="img/sub.jpg" alt="">
+                <img src="img/sub.jpg" alt="">
+                <img src="img/sub.jpg" alt="">
+                <img src="img/sub.jpg" alt="">
+                <img src="img/sub.jpg" alt="">
+                <img src="img/sub.jpg" alt="">
+                <img src="img/sub.jpg" alt="">
+                <img src="img/sub.jpg" alt="">
+                <img src="img/sub.jpg" alt="">
+                <img src="img/sub.jpg" alt="">
+            </section>
+
+            <section class="amigos" style="display: none;">
+                <ul>
+                    <li>
+                        <img src="https://th.bing.com/th/id/OIP.AvFCDidOSeResW3k31eCdQHaHa?rs=1&pid=ImgDetMain" alt="">
+                        <div>
+                            <span class="nome-amigo">Saimu</span>
+                            <span class="username-amigo">@saimuehu</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://th.bing.com/th/id/OIP.AvFCDidOSeResW3k31eCdQHaHa?rs=1&pid=ImgDetMain" alt="">
+                        <div>
+                            <span class="nome-amigo">Saimu</span>
+                            <span class="username-amigo">@saimuehu</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://th.bing.com/th/id/OIP.AvFCDidOSeResW3k31eCdQHaHa?rs=1&pid=ImgDetMain" alt="">
+                        <div>
+                            <span class="nome-amigo">Saimu</span>
+                            <span class="username-amigo">@saimuehu</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="avaliacoes" style="display: none;">
+                <ul>
+                    <li>
+                        <img src="https://th.bing.com/th/id/OIP.AvFCDidOSeResW3k31eCdQHaHa?rs=1&pid=ImgDetMain" alt="">
+                        <div class="dados-comentario">
+                            <div>
+                                <span class="nome-usuario">Laliras</span>
+                                <span class="username-usuario">@laliras01</span>
+                                <span class="jogo-relacionado">sobre Subway Surfers</span>
+                            </div>
+                            <span class="data-avaliacao">publicado em 12/03/2023</span>
+                            <p class="comentario">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="meus-dados" style="display: none;">
+                <div class="mostra-dados" style="display: flex;">
+                    <span class="label">Nome do usuário</span>
+                    <span class="dado name-value">Laliras</span>
+
+                    <span class="label">Username</span>
+                    <span class="dado username-value">laliras01</span>
+
+                    <span class="label">E-mail</span>
+                    <span class="dado email-value">larissa@gmail.com</span>
+
+                    <span class="label">Data de Nascimento</span>
+                    <span class="dado dn-value">01/03/2005</span>
+
+                    <button class="btn-alterar-dados">Alterar meus dados</button>
+                    <button class="btn-alterar-senha">Alterar minha senha</button>
+                </div>
+                    
+                <div class="editar-dados" style="display: none">
+                    <label for="name">Nome do usuário</label>
+                    <input type="text" class="input-edicao" id="name" name="name">
+
+                    <label for="username">Username</label>
+                    <input type="text" class="input-edicao" id="username" name="username">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" class="input-edicao" id="email" name="email">
+
+                    <button class="btn-concluir">Concluir</button>
+                </div>
+
+                <div class="editar-senha" style="display: none">
+                    <label class="label">Senha atual</label>
+                    <input type="password" class="input-edicao" maxlength="8">
+
+                    <label class="label">Nova senha</label>
+                    <input type="password" class="input-edicao" maxlength="8">
+
+                    <label class="label">Confirmar nova senha</label>
+                    <input type="password" class="input-edicao" maxlength="8">
+
+                    <button class="btn-concluir">Concluir</button>
+                </div>
+            </section>
+            
+        </section>
+
+        <aside class="lista-amigos">
+            <span class="titulo-amigos">Amigos</span>
+            <div class="input-box">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Pesquise pelo username">
+            </div>
+            <ul>
+                <li>
+                    <img src="https://th.bing.com/th/id/OIP.AvFCDidOSeResW3k31eCdQHaHa?rs=1&pid=ImgDetMain" alt="">
+                    <div>
+                        <span class="nome-amigo">Saimu</span>
+                        <span class="username-amigo">@saimuehu</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://th.bing.com/th/id/OIP.AvFCDidOSeResW3k31eCdQHaHa?rs=1&pid=ImgDetMain" alt="">
+                    <div>
+                        <span class="nome-amigo">Saimu</span>
+                        <span class="username-amigo">@saimuehu</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://th.bing.com/th/id/OIP.AvFCDidOSeResW3k31eCdQHaHa?rs=1&pid=ImgDetMain" alt="">
+                    <div>
+                        <span class="nome-amigo">Saimu</span>
+                        <span class="username-amigo">@saimuehu</span>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+
+    </article>
+    
+    <nav class="menu-lateral">
+
+        <ul>
+
+            <li class="menu-item">
+                <a href="#">
+                    <span class="menu-icon"><i class="bi bi-controller"></i></span>
+                    <span class="txt-link">Página Inicial</span>
+                </a>
+            </li>
+            <hr>
+            <li class="menu-item">
+                <a href="#">
+                    <span class="menu-icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt-link">Meu Perfil</span>
+                </a>
+            </li>
+            <hr>
+            <li class="menu-item">
+                <a href="#">
+                    <span class="menu-icon"><i class="bi bi-people-fill"></i></span>
+                    <span class="txt-link">Amigos</span>
+                </a>
+            </li>
+            <hr>
+            <li class="menu-item">
+                <a href="#">
+                    <span class="menu-icon"><i class="bi bi-gem"></i></span>
+                    <span class="txt-link">Planos</span>
+                </a>
+            </li>
+            <hr>
+            <li class="menu-item">
+                <a href="#">
+                    <span class="menu-icon"><i class="bi bi-piggy-bank"></i></span>
+                    <span class="txt-link">Meus Pagamentos</span>
+                </a>
+            </li>
+                
+        </ul>
+
+    </nav>
+
+    <script src="tela-perfil.js"></script>
+</body>
+</html>
